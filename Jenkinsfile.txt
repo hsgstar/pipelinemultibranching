@@ -1,47 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('plan') {
+    stage('master') {
       steps {
-        echo 'plan for app development'
+        echo 'master changes'
       }
     }
 
-    stage('code') {
+    stage('development') {
       steps {
-        echo 'code'
+        echo 'development changes'
       }
     }
 
-    stage('build') {
-      steps {
-        echo 'build'
-      }
-    }
-
-    stage('test') {
-      steps {
-        echo 'test'
-      }
-    }
-
-    stage('release') {
-      steps {
-        echo 'release'
-      }
-    }
-
-    stage('deploy') {
-      steps {
-        echo 'deploy'
-      }
-    }
-
-    stage('operate') {
-      steps {
-        echo 'operate'
-      }
-    }
-
-  }
+}
 }
